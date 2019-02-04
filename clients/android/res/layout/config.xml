@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/sendersEmail"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="47dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/sendersEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="20dp"
+        android:text="Senders Email" />
+
+    <TextView
+        android:id="@+id/sendersPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="100dp"
+        android:text="Senders Password" />
+
+    <EditText
+        android:id="@+id/sendersPassword"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="126dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/receiversEmail"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="206dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/recieversEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="179dp"
+        android:text="Receivers Email" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_x="164dp"
+        android:layout_y="47dp"
+        android:text="Readings" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="16dp"
+        android:layout_y="265dp"
+        android:text="Sending Frequency (mins)" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="172dp"
+        android:layout_y="110dp" >
+
+        <RadioButton
+            android:id="@+id/useEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Email" />
+
+        <RadioButton
+            android:id="@+id/useHTTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use HTTP" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/sndFreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="288dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</AbsoluteLayout>
